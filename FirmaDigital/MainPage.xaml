@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirmaDigital.MainPage">
+    
+
+        <StackLayout>
+            <SignaturePad:SignaturePadView x:Name="signaturePad"
+                                       WidthRequest="400" HeightRequest="200"
+                                       BackgroundColor="White" />
+
+            <Entry x:Name="descriptionEntry"
+               Placeholder="Descripción" />
+
+            <Button Text="Guardar Firma"
+                Clicked="OnSaveButtonClicked" />
+
+            <Button Text="Ver Firmas Guardadas"
+                Clicked="OnShowSignaturesButtonClicked" />
+        </StackLayout>
+    </ContentPage>
